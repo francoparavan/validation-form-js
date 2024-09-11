@@ -4,6 +4,7 @@
   "description": "Professional Boilerplate for Vanilla.js Web Apps",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "webpack-dev-server --mode development --port 3000 --open",
     "build": "webpack --mode development --verbose --colors --display-error-details",
     "deploy": "node deploy-to-github.js"
@@ -62,5 +63,11 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
+  },
+  "resolutions": {
+    "uuid": "^7.0.0",
+    "urix": "^0.2.0",
+    "source-map-url": "^0.5.0",
+    "resolve-url": "^0.2.0"
   }
 }
